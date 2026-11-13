@@ -1,14 +1,14 @@
-# Change Proposal: Project Proposal Refactor to A2Z SOP & Course Standards
+# Change Proposal: Project Proposal Refactor to A2Z SOP, OpenSpec SDD & Updated Course Standards
 
 ## Why
-The original project proposal and design documentation for AirGuard AI contain valuable technical details, but require restructuring to strictly comply with:
-1. The 2020 A-Z SOP (Abstract A-F, Introduction G-L, Related Work M-O).
-2. The Course Project Proposal Guidelines (期末專題提案作業規範): 4 parts (Abstract, Introduction, Related Work + Deep Research 5 Cores / 3 Debates / 10 Details, Proposed Scheme PA-PM).
-3. The Spec-Driven Development (SDD) standard using OpenSpec.
+The AirGuard AI project proposal and engineering design (`DESIGN.md`) require a complete Spec-Driven Development (SDD) refactoring to strictly comply with:
+1. **Course Core Requirements (Steps 1–5)**: OpenSpec installation & SDD adoption, A–F Abstract + Deep Research (5 Cores, 3 Trade-offs, 10 Details), conversion of `DESIGN.md` into an executable OpenSpec workflow, G–L Introduction refactor, and M–O Related Work refactor (1/2 AI + 1/2 Domain + 4x5 Table + Research Gap).
+2. **Class Prompt Stage 1 (NBLM & ChatGPT Infographic)**: Full compliance review against `A2Z outline example.pdf` and `期末專題提案作業規範.pdf`, plus an A4 landscape high-density numbered infographic blueprint and visual artifact.
+3. **Class Prompt Stage 2 (Perplexity Evidence Enhancement & 300-Word Summary)**: Augmenting A–F with verified 2024–2026 authoritative reports (WHO 2025, State of Global Air 2025, Taiwan MOENV Jan 2025 tightened $\text{PM}_{2.5}$ $12\ \mu\text{g/m}^3$ standard & ozone alerts, TableBench/RAGTruth, *npj Clean Air* 2026 Neuro-Air) and distilling a ~300-word Chinese executive summary.
+4. **Class Prompt Stage 3 (IEEE Transactions Systems Abstract)**: Producing a publication-ready IEEE Transactions on Systems, Man, and Cybernetics: Systems style `Title—`, `Abstract—`, and `Index Terms—` block.
 
 ## What Changes
-1. **Abstract Refactoring**: Formulate a complete A-F narrative with zero hallucinated experimental data (Expected outcomes only).
-2. **Introduction Refactoring**: Expand G-L sections with clear General context, However obstacles, In-literature categorization, Judgement SWOT analysis, Keypoint contributions, and List of organization.
-3. **Related Work Refactoring**: Synthesize literature into a 1/2 AI + 1/2 Domain structure, an exhaustive 4x5 summary table ([1]-[8]), explicit Research Gap, and full Deep Research integration (5 Core mental models, 3 Professional debates, 10 Deep understanding details).
-4. **OpenSpec Specification Integration**: Establish `openspec/specs/` as the single source of truth for pipeline, architecture, domain rules, and benchmark.
-5. **Prompt Alignment**: Structure outputs to match NotebookLM analysis and ChatGPT A4 landscape high-density infographic generation requirements.
+1. **Canonical OpenSpec Specs (`openspec/specs/`)**: Structure `data-pipeline`, `agent-architecture`, `domain-rules`, and `evaluation-benchmark` as strict OpenSpec `<capability>/spec.md` specifications derived from `DESIGN.md`.
+2. **Design-to-Workflow Conversion (`design.md`)**: Convert `DESIGN.md`'s 9-stage architecture, 9-step algorithm, data policies, and 60-question evaluation harness into an OpenSpec technical workflow with explicit architectural decisions and risk mitigations.
+3. **Refactored Proposal (`Proposal_Refactored.md`)**: Integrate IEEE Transactions Abstract, Perplexity-grounded A–F Abstract + Expected Academic Value + A–F Review & Refinement, 300-word condensed summary, G–L Introduction, M–O Related Work (8 papers, 4x5 Table, Research Gap), Deep Research (5 Cores / 3 Trade-offs / 10 Details), PA–PM Proposed Scheme, Q–V Evaluation Plan, W–Z Conclusion, and verified References `[1]–[15]`.
+4. **Prompt & Review Alignment**: Synchronize `AirGuard_AI_NBLM_Analysis.md`, `AirGuard_AI_Infographic_Blueprint.md`, `chatgpt_prompt.txt`, `DESIGN.md`, and `README.md`.

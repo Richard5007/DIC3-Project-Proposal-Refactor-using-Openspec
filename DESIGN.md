@@ -204,4 +204,5 @@ These choices do not block a review of the current Proposal Document and Proposa
 - WHO global air quality guidelines (2021): <https://www.who.int/publications/i/item/9789240034228>
 - WHO 2025 air-pollution science and policy summary: <https://www.who.int/publications/i/item/B09461>
 - U.S. EPA, A Guide to Siting and Installing Air Sensors: <https://www.epa.gov/air-sensor-toolbox/guide-siting-and-installing-air-sensors>
-- Key research references and DOI links: see `Proposal.md`, References [1]–[8].
+- Key research references and DOI links: see `Proposal_Refactored.md`, Section 6 (`References [1]–[18]`).
+- OpenSpec SDD workflow conversion: see `openspec/specs/{data-pipeline,agent-architecture,domain-rules,evaluation-benchmark}/spec.md` and `openspec/changes/proposal-refactor/design.md`.

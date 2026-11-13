@@ -1,32 +1,18 @@
 schema: spec-driven
 
-# Project context (optional)
-# Add only constraints that should guide OpenSpec artifacts and workflows.
-# Include constraints an agent cannot infer by reading the code.
-# Keep general project documentation and discoverable codebase facts out.
-# Example:
-#   context: |
-#     Designs and tasks must cover Windows, macOS, and Linux
-#     Write all artifacts in Spanish
+context: |
+  Project: AirGuard AI (Taiwan Air Quality Evidence Agent)
+  Team: 許景翔、李君衛、吳誠哲
+  Primary Dataset: Taiwan MOENV AQX_P_488 historical hourly CSVs (2026-01-01 to 2026-10-29 16:00; 970,296 raw rows -> 606,137 clean rows across 88 stations; 13 conflict keys / 26 variants quarantined).
+  Core Principle: Strictly decouple natural language orchestration (LLM Planner/Generator) from deterministic retrieval, Python/Pandas computation, Taiwan MOENV max sub-index AQI rules, and row-level provenance guards.
+  Course Standards: 2020 A-Z SOP (A-F, G-L, M-O, PA-PM, Q-V, W-Z), Course Proposal Rubric (5 Cores, 3 Trade-offs, 10 Details), NBLM Review, ChatGPT A4 Landscape High-Density Infographic, Perplexity 2024-2026 Evidence-Enhanced A-F + 300-Word Summary, and IEEE Transactions Systems Journal Abstract.
+  Academic Integrity: Proposal stage only — never report unexecuted benchmark targets as observed experimental results.
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always state what is out of scope
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
-
-# Per-operation guidance (optional)
-# Add advisory guidance for how apply and archive work should be conducted.
-# This is separate from artifact rules above.
-# Example:
-#   operations:
-#     apply:
-#       guidance:
-#         - Keep test summaries concise
-#     archive:
-#       guidance:
-#         - Summarize the archive outcome before finishing
+rules:
+  proposal:
+    - Always cite exact audited counts (970,296 raw rows, 606,137 clean rows, 13 conflict keys, 88 stations) and verified 2024-2026 references.
+    - Explicitly state what is out of scope for the offline MVP (live AQX_P_432, uncalibrated AirBox IoT fusion, clinical diagnosis, causal factory attribution).
+  specs:
+    - Keep each requirement concise (<= 500 chars) and verifiable with WHEN/THEN scenarios.
+  design:
+    - Map every module in DESIGN.md to canonical openspec/specs/ capabilities and deterministic execution gates.
